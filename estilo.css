@@ -1,14 +1,19 @@
 @import "fonts/stylesheet.css";
 
 html, body {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 #recipiente{
+	position: absolute;
 	background: linear-gradient(#f8f1b2,#4599b2);
 	width:800px;
-	margin: 0 auto;
+	left:0;
+	right:0;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 24px;
 }
 
 #cabecalho{
@@ -20,12 +25,15 @@ html, body {
 	font-family:'Ravie', cursive;
 	font-size:36px;
 	color:#e90c0c;
+	margin:0;
 }
 
 #cabecalho h2{
 	font-family:'Trebuchet MS', cursive;
 	font-size:24px;
 	color:#333;
+	margin:0;
+	padding-left: 180px;
 }
 
 mark{
@@ -36,26 +44,56 @@ mark{
 
 #lateral{
 	float:left;
+	position: absolute;
+	left: 0px;
+	top: 0px;
 	width:154px;
+	height:100%;
 }
 
 #lateral h2{
+	position:absolute;
+	transform-origin: 0% 50%;
 	transform: rotate(-90deg);
+	left:50%;
+	top:50%;
 	font-family:'Verdana', cursive;
 	font-size:48px;
 	color:#333;
 	font-weight:bold;
+	margin:0;
+}
+
+#imagem_siri{
+	position:relative;
+	left:-10px;
+	top:7px;
+}
+
+#imagem_bolhas{
+	position:absolute;
+	right:20px;
+	bottom:125px;
+}
+
+#imagem_peixe{
+	position:absolute;
+	bottom:0px;
+	left:-44px;
 }
 
 #cardapio{
+	box-sizing: padding-box;
 	margin-left:154px;
+	padding-left:20px;
+	border:solid 1px #aac0ae;
 	font-family:'Verdana', cursive;
 	font-size:14px;
 	color:#333;
-	border:solid 1px #aac0ae;
 	background-color: rgba(255,255,255,0.2);
+	width:644px;
+	line-height:30px;
 	white-space:pre-line;
-	width:646px;
 }
 
 #cardapio h3{
@@ -63,12 +101,33 @@ mark{
 	font-size:18px;
 	color:#333;
 	font-weight:bold;
+	margin-bottom:0;
+	
 }
 
 #rodape{
-	float:right;
+	height:120px;
 }
 
-#ticket:{
-	float:left;
+
+#rodape img{
+	position: absolute;
+	right:0;
+	padding-top: 46px;
+	padding-bottom: 25px;
+	padding-right: 15px;
+}
+
+#ticket img{
+	position:fixed;
+	top:295px;
+	left:-69px;
+	transition-property: left;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-out;
+}
+
+#ticket img:hover{
+	left:0px;
+
 }
