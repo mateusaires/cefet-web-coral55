@@ -1,1 +1,41 @@
 @import "fonts/stylesheet.css";
+
+#recipiente{
+	background: linear-gradient(#f8f1b2,#4599b2);
+}
+
+#cabecalho h1{
+	font-family:'Ravie', cursive;
+	font-size:36px;
+	color:#e90c0c;
+}
+
+#cabecalho h2{
+	font-family:'Trebuchet MS', cursive;
+	font-size:24px;
+	color:#333;
+}
+
+#word_acai{
+	color:#d027aa;
+}
+
+#lateral h2{
+	font-family:'Verdana', cursive;
+	font-size:48px;
+	color:#333;
+	font-weight:bold;
+}
+
+#cardapio{
+	font-family:'Verdana', cursive;
+	font-size:14px;
+	color:#333;
+}
+
+#cardapio h3{
+	font-family:'Verdana', cursive;
+	font-size:18px;
+	color:#333;
+	font-weight:bold;
+}
