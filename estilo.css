@@ -1,7 +1,19 @@
 @import "fonts/stylesheet.css";
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 #recipiente{
 	background: linear-gradient(#f8f1b2,#4599b2);
+	width:800px;
+	margin: 0 auto;
+}
+
+#cabecalho{
+	width:646px;
+	padding-left:154px;
 }
 
 #cabecalho h1{
@@ -16,11 +28,19 @@
 	color:#333;
 }
 
-#word_acai{
+mark{
 	color:#d027aa;
+	background-color: rgba(0,0,0,0);
+}
+
+
+#lateral{
+	float:left;
+	width:154px;
 }
 
 #lateral h2{
+	transform: rotate(-90deg);
 	font-family:'Verdana', cursive;
 	font-size:48px;
 	color:#333;
@@ -28,9 +48,14 @@
 }
 
 #cardapio{
+	margin-left:154px;
 	font-family:'Verdana', cursive;
 	font-size:14px;
 	color:#333;
+	border:solid 1px #aac0ae;
+	background-color: rgba(255,255,255,0.2);
+	white-space:pre-line;
+	width:646px;
 }
 
 #cardapio h3{
@@ -38,4 +63,12 @@
 	font-size:18px;
 	color:#333;
 	font-weight:bold;
+}
+
+#rodape{
+	float:right;
+}
+
+#ticket:{
+	float:left;
 }
